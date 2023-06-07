@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <title>Tajti Üst</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="Style.css">
+    <script src="Script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="#">Tajti Kisüsti Kft.</a></div>
+            <ul class="links">
+                <li><a href="hero">Kezdőlap</a></li>
+                <li><a href="about">Rólunk</a></li>
+                <li><a href="services">Szolgáltatások</a></li>
+                <li><a href="contact">Kapcsolat</a></li>
+            </ul>
+            <a href="#" class="action_btn">RENDELÉS </a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="dropdown_menu">
+            <ul>
+                <li><a href="hero">Kezdőlap</a></li>
+                <li><a href="about">Rólunk</a></li>
+                <li><a href="services">Szolgáltatások</a></li>
+                <li><a href="contact">Kapcsolat</a></li>
+                <li><a href="#" class="action_btn">RENDELÉS</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="herobox">
+        <section id="hero">
+            <h1>Üdvözöljük a megújult weboldalon</h1>
+            <p>
+                Minőségi pálinkát keres? Akkor jó helyen jár. Ez a Tajti Kisüsti Kft. pálinkafőző weboldala. Pár kattintással online is tud pálinkát rendelni tőlünk!
+            </p>
+        </section>
+    </main>
+
+        <script>
+            const toggleBtn = document.querySelector('.toggle_btn')
+            const toggleBtnIcon = document.querySelector('.toggle_btn i')
+            const dropDownMenu = document.querySelector('.dropdown_menu')
+
+            toggleBtn.onclick = function () {
+                dropDownMenu.classList.toggle('open')
+                const isOpen = dropDownMenu.classList.contains('open')
+
+                toggleBtnIcon.classList = isOpen
+                    ? 'fa-solid fa-xmark'
+                    : 'fa-solid fa-bars'
+            }
+        </script>
+</body>
+</html>
