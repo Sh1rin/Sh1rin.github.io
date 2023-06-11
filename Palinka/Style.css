@@ -58,6 +58,7 @@ section{
 }
 
 #hero p {
+    font-family: 'Cabin', sans-serif;
     margin: 0;
     padding: 0;
     font-size: 18px;
@@ -65,6 +66,7 @@ section{
 }
 
 #hero h1 {
+    font-family: 'Cabin', sans-serif;
     text-shadow: 0 5px 5px #000;
     margin: 0 0 20px;
     padding: 0;
@@ -82,6 +84,15 @@ a{
     font-size: 1rem;
 }
 
+.links .active{
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    background-color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
 .links a:hover {
     padding: 0 1rem;
     display: flex;
@@ -96,11 +107,14 @@ header{
 }
 
 .links a {
+    text-decoration: none;
+    font-family: 'Black Ops One', cursive;
     padding: 0 1rem;
     display: flex;
     align-items: center;
     height: 60px;
     color: rgb(255, 0, 0);
+    font-size: 1.2rem;
 }
 
 .navbar {
@@ -116,11 +130,11 @@ header{
     justify-content: flex-end;
 }
 .logo a{
+    font-family: 'Fascinate', cursive;
     display: flex;
     align-items: center;
     height: 60px;
     font-size: 1.5rem;
-    font-weight: bold;
     color:rgb(255, 255, 255);
     background-color: rgb(255, 0, 0);
     padding: 0 0.6rem;
@@ -163,6 +177,8 @@ header{
 }
 
 .action_btn{
+    font-size: 1.2rem;
+    font-family: 'Black Ops One', cursive;
     background-color: black;
     color: #fff;
     padding: 0.5rem 1rem;
@@ -188,17 +204,16 @@ header{
     height: 0;
     width: 300px;
     background: rgb(255, 255, 255, 0.85);
-    box-shadow: 0 5px 15px rgba(0,0,0,.5);
-    backdrop-filter: blur(15px);
     overflow: hidden;
     transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .dropdown_menu.open{
-    height: 240px;
+    height: 247px;
 }
 
 .dropdown_menu a{
+    font-family: 'Black Ops One', cursive;
     width: 100%;
     height: 100%;
     padding: 0.7rem;
@@ -224,6 +239,7 @@ header{
 }
 
 .dropdown_menu .action_btn {
+    font-family: 'Black Ops One', cursive;
     margin: 0;
     width: 100%;
     height: 100%;
@@ -255,3 +271,11 @@ header{
         width: unset;
     }
 }
+
+/*ABOUT RÉSZ*/
+
+/*SERVICES RÉSZ*/
+
+/*CONTACT RÉSZ*/
+
+/*BUY RÉSZ (kivéve)*/
