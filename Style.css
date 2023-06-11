@@ -94,6 +94,7 @@ a{
 }
 
 .links a:hover {
+    text-decoration: underline;
     padding: 0 1rem;
     display: flex;
     align-items: center;
