@@ -20,20 +20,17 @@ section{
 }
 
 #about{
-    background-color: darkgoldenrod;
+    background-image: linear-gradient(rgb(56, 32, 0), rgb(30, 30, 30));
 }
 
 #services{
-    background-color: aquamarine;
+    background-color: rgb(30, 30, 30);
 }
 
 #contact{
-    background-color: grey;
+    background-image: linear-gradient(rgb(30, 30, 30), rgb(20, 0, 0));
 }
 
-#buy{
-    background-color: purple;
-}
 
 /*HOME SECTION*/
 
@@ -46,6 +43,8 @@ section{
 }
 
 #hero {
+    display: flex;
+    position: relative;
     background: rgba(139, 84, 39, 0.527);
     box-shadow: 0 5px 15px  rgba(0,0,0,.6);
     display: flex;
@@ -74,6 +73,73 @@ section{
     text-transform: uppercase;
 }
 
+/*LEFELE NYÍL*/
+
+.arrow-container {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 130px;
+    bottom: 0px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .circle {
+    position: absolute;
+    top: -15px;
+    left: 0px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border-color: white;
+    border-style: solid;
+    border-width: 3px;
+    opacity: 0.8;
+    animation: circle-animation 1s infinite;
+    box-shadow: 3px -3px 4px 0px; 
+  }
+
+  .arrow {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-style: solid;
+    border-color: white;
+    border-width: 4px 4px 0 0;
+    animation: arrow-animation 1s infinite;
+    box-shadow: 3px -3px 4px 0px; 
+  }
+  
+  @keyframes arrow-animation {
+    0% {
+      transform: rotate(135deg) translateY(20px) translateX(-20px);
+      opacity: 1.5;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      transform: rotate(135deg) translateY(0px) translateX(0px);
+      opacity: 0;
+    }
+  }
+
+  @keyframes circle-animation {
+    0% {
+      transform: scale(1.5);
+    }
+    50% {
+      transform: scale(1.5);
+    }
+    100% {
+      transform: scale(1.5);
+    }
+  }
+
 li{
     list-style: none;
 }
@@ -101,6 +167,7 @@ a{
     height: 60px;
     background-color: rgb(255, 0, 0);
     color: rgb(255, 255, 255);
+    transition: 0.7s;
 }
 
 header{
@@ -119,6 +186,8 @@ header{
 }
 
 .navbar {
+    backdrop-filter: blur(15px);
+    z-index: 999;
     overflow: hidden;
     position: fixed;
     width: 100%;
@@ -127,17 +196,17 @@ header{
     align-items: center;
     background: rgb(255, 255, 255, 0.85);
     box-shadow: 0 5px 15px rgba(0,0,0,.5);
-    padding: 0 2rem 0 0;
     justify-content: flex-end;
+    padding: 0 2rem 0 0;
 }
 .logo a{
     font-family: 'Fascinate', cursive;
     display: flex;
     align-items: center;
     height: 60px;
+    width: 250px;
+    color: rgb(255, 0, 0);
     font-size: 1.5rem;
-    color:rgb(255, 255, 255);
-    background-color: rgb(255, 0, 0);
     padding: 0 0.6rem;
 }
 
@@ -145,29 +214,31 @@ header{
     display: flex;
     align-items: center;
     height: 60px;
+    width: 250px;
     font-size: 1.5rem;
     font-weight: bold;
-    color:rgb(255, 0, 0);
-    background-color: rgb(255, 255, 255);
     padding: 0 0.6rem;
+    color: rgb(255, 135, 135);
+    text-decoration: underline;
+    transition: 0.5s;
 }
 
 .logo{
     display: flex;
-    width: 100%;
+    position: relative;
     height: 100%;
+    width: 250px;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .links{
     display: flex;
     height: 100%;
-    width: 50%;
-    justify-content: flex-end;
+    width: 100%;
+    justify-content: center;
     align-items: center;
-    margin: 0;
-    padding: 0;
+    margin: 0 auto;
 }
 
 .navbar .toggle_btn{
@@ -177,26 +248,10 @@ header{
     display: none;
 }
 
-.action_btn{
-    font-size: 1.2rem;
-    font-family: 'Black Ops One', cursive;
-    background-color: black;
-    color: #fff;
-    padding: 0.5rem 1rem;
-    border: none;
-    outline: none;
-    font-size: 0.8rem;
-    font-weight: bold;
-    cursor: pointer;
-    transition: scale 0.2 ease;
-}
-
-.action_btn:active {
-    scale: 0.95;
-}
 
 /*DROPDOWN MENU*/
 .dropdown_menu{
+    z-index: 999;
     overflow: auto;
     display: none;
     position: fixed;
@@ -205,12 +260,13 @@ header{
     height: 0;
     width: 300px;
     background: rgb(255, 255, 255, 0.85);
+    backdrop-filter: blur(15px);
     overflow: hidden;
     transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .dropdown_menu.open{
-    height: 247px;
+    height: 195px;
 }
 
 .dropdown_menu a{
@@ -232,29 +288,16 @@ header{
     justify-content: center;
 }
 
-.dropdown_menu .rendeles_li{
-    margin: 0.32;
-    padding: 0;
-    background: rgba(238, 166, 0, 0);
-    border: none;
-}
-
-.dropdown_menu .action_btn {
-    font-family: 'Black Ops One', cursive;
-    margin: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    border-radius: 0;
-    padding: 1rem 0rem 1rem 0rem;
- }
 
 /*RESPONSIVE*/
 @media (max-width: 992px) {
     .navbar .links,
     .navbar .action_btn {
         display: none;
+    }
+
+    .logo{
+        width: 100%;
     }
 
     .navbar .toggle_btn{
@@ -275,8 +318,99 @@ header{
 
 /*ABOUT RÉSZ*/
 
+.about_box{
+    position: relative;
+    padding: 0 5%;
+    top: 80px;
+}
+
+.about_box_text{
+    display: flex;
+    position: relative;
+    background: rgba(0, 0, 0, 0.527);
+    box-shadow: 0 5px 15px  rgba(0,0,0,.6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    padding: 20px;
+
+}
+.about_box_text p{
+    text-align: justify;
+    font-family: 'Cabin', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: clamp(0.5rem, 1vw + 0.5rem ,1.1rem);
+    text-shadow: 0 5px 5px #000;
+}
+
+.about_box_text h2{
+    text-align: center;
+    font-family: 'Cabin', sans-serif;
+    text-shadow: 0 5px 5px #000;
+    margin: 0 0 20px;
+    padding: 0;
+    font-size: clamp(1rem, 1.5vw + 1rem ,2.3rem);
+    text-transform: uppercase;
+}
+
+.about_picture_container{
+    position: relative;
+    padding: 0 5%;
+    top: 90px;
+}
+
+.about_picture{
+    display: flex;
+    background: rgba(0, 0, 0, 0.527);
+    box-shadow: 0 5px 15px  rgba(0,0,0,.6);
+    align-items: center;
+    padding: 0px 30px 5px 30px;
+    flex-wrap: wrap;
+}
+
+.about_p{
+    flex: 1 1 60%;
+    flex-wrap: wrap;
+    text-align: justify;
+    font-family: 'Cabin', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: clamp(0.5rem, 1vw + 0.5rem ,1.1rem);
+    text-shadow: 0 5px 5px #000;
+}
+
+.about_p h2{
+    text-align: center;
+    font-family: 'Cabin', sans-serif;
+    text-shadow: 0 5px 5px #000;
+    margin: 10px 0 0 0;
+    padding: 0;
+    font-size: clamp(0.7rem, 1vw + 0.7rem ,2rem);
+}
+
+.images img{
+    max-width: 45%;
+    height: auto;
+    margin: 5px;
+    box-shadow: 0 3px 10px  rgba(255, 255, 255, 0.5);
+}
+
+.images{
+    display: flex;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 1600px) {
+    .images{
+        width: 100%;
+    }
+}
+
 /*SERVICES RÉSZ*/
 
 /*CONTACT RÉSZ*/
-
-/*BUY RÉSZ (kivéve)*/
