@@ -37,15 +37,26 @@ window.onscroll = () => {
     })
 }
 
-const arrowContainer = document.querySelector('.arrow-container');
+// TO DO LIST
+// const arrowContainer = document.querySelectorAll('.arrow-container');
 
+
+const arrowContainer = document.querySelector('.arrow-container');
 arrowContainer.addEventListener('click', () => {
-  const screenHeight = window.innerHeight;
-  window.scrollTo({
-    top: screenHeight,
-    behavior: 'smooth'
-  });
-});
+          window.scrollTo({
+            top: window.innerHeight,
+            behavior: 'smooth'
+          });
+        });
+
+// for (let i = 0; i < arrowContainer.length; i++) {
+//     arrowContainer[i].addEventListener('click', () => {
+//       window.scrollTo({
+//         top: window.innerHeight,
+//         behavior: 'smooth'
+//       });
+//     });
+// }
 
 /*hide on click*/
 
