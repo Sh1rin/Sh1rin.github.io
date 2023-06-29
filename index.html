@@ -9,13 +9,14 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
     <title>Tajti Üst</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fontawesome.com/icons/handshake?f=sharp&s=light" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="Style.css">
+    <script src="https://kit.fontawesome.com/2b7774ada6.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fascinate&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
-
 
 
 </head>
@@ -24,10 +25,10 @@
         <div class="navbar">
             <div class="logo"><a href="#home">Tajti Kisüsti Kft.</a></div>
             <ul class="links">
-                <li><a href="#home" class="active">Kezdőlap</a></li>
-                <li><a href="#about">Rólunk</a></li>
-                <li><a href="#services">Szolgáltatások</a></li>
-                <li><a href="#contact">Kapcsolat</a></li>
+                <li><a href="#home" class="active underline">Kezdőlap</a></li>
+                <li><a href="#about" class="underline">Rólunk</a></li>
+                <li><a href="#services" class="underline">Szolgáltatások</a></li>
+                <li><a href="#contact" class="underline">Kapcsolat</a></li>
             </ul>
             <div class="social_media">
                 <div></div>
@@ -38,12 +39,14 @@
         </div>
 
         <div class="dropdown_menu">
-            <ul>
-                <li><a href="#home">Kezdőlap</a></li>
-                <li><a href="#about">Rólunk</a></li>
-                <li><a href="#services">Szolgáltatások</a></li>
-                <li><a href="#contact">Kapcsolat</a></li>
-            </ul>
+                    <ul>
+                        <li><a class="close" href="#home">Kezdőlap</a></li>
+                        <li><a class="close" href="#about">Rólunk</a></li>
+                        <li><a class="close" href="#services">Szolgáltatások</a></li>
+                        <li><a class="close" href="#contact">Kapcsolat</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </header>
 
@@ -53,7 +56,7 @@
                 <div id="hero">
                     <h1>Üdvözöljük a megújult weboldalunkon</h1>
                     <p>
-                    Minőségi pálinkát keres? Akkor jó helyen jár. Ez a Tajti Kisüsti Kft. pálinkafőző weboldala. Pár kattintással online is tud pálinkát rendelni tőlünk!
+                    Minőségi pálinkát szeretne? Akkor jó helyen jár. Ez a Tajti Kisüsti Kft. szeszfőzde weboldala. Pár kattintással online is tud egyeztetni velünk a főzéssel kapcsolatban.
                     </p>
                 </div>
             </div>
@@ -77,14 +80,14 @@
             </div>
             <div class="about_picture_container">
                 <div class="about_picture">
-                    <a class="about_p">
+                    <div class="about_p">
                         <h2>Tajti Kisüsti Kft.</h2>
                         <p><br>A 2019-ben alapított vállalkozásunk egy családi vállalkozás, melyet a <b>szeszfőzés iránti szenvedély </b> hajtott előre és a hagyományos kézműves főzési technikákra továbbá a kiváló minőségű párlatokra helyezi a hangsúlyt. <br></p>
                         <p></p><br>A hagyományos recepteket modern technikákkal ötvöztük, hogy a legjobb minőséget és ízélményt nyújthassuk vásárlóinknak. <b>Szigorú minőségellenőrzési folyamatot vezettünk be,</b> hogy biztosítsuk a termékeink kiváló minőségét és az elvárásoknak való megfelelést. <br></p>
                         <p><br>Az alapításunk óta eltelt időben sikerült elnyernünk a fogyasztók bizalmát. A vállalkozásunk neve hamar hírnévre tett szert a pálinkafőzés terén, és az ország különböző régióiban elterjedt termékeinket többen is a legjobbak között emlegették. <br></p>
                         <p></p><br>Ahogy nőtt a kereslet a párlatok iránt, a családi vállalkozásunk is növekedett. Emiatt egy modern és korszerű üzemet hoztunk létre, ahol a legújabb berendezések és technológiák segítettek a minőségünk fenntartásában és a termelés hatékonyságának növelésében. <br></p>
                         <p><br><b><i>Nagy hangsúlyt fektetünk a fenntarthatóságra és környezetvédelemre is. Mindegyik fázisban odafigyelünk a természetes erőforrások takarékos használatára, a hulladék minimalizálására és a fenntartható termelésre. A termékeket úgy állítjuk elő, hogy a lehető legkevesebb ökológiai lábnyomot hagyják maguk után.</i></b><br></p>
-                    </a>
+                    </div>
                     <div class="images">
                         <img src="\photos\tajti-ust-1.jpg" alt="">
                         <img src="\photos\tajti-kisusti-kft.png" alt="pálinkfőző üstről kép (réz)">
@@ -93,14 +96,37 @@
             </div>
         </section>
         <section id="services">
-            <div>
-                
+            <div class="services_container">
+                <h1>Szolgáltatásaink</h1>
+                <div class="row">
+                    <div class="service">
+                        <i class="fa-regular fa-comments"></i>
+                        <h2>Ügyfelekkel való kommunikáció</h2>
+                        <p>A kezdeti fázistól a végsőig folyamatos kontaktot tartunk kedves ügyfeleinkkel. Elérhetőek vagyunk a helyszínen, E-mail-ben és telefonon is a lejjebb írt napokon és időpontokban.</p>
+                    </div>
+
+                    <div class="service">
+                        <i class="fa-solid fa-truck-moving"></i>
+                        <h2>Be/Kiszállítás</h2>
+                        <p>A kifőzésre váró cefrét az ügyféllel való egyeztetés után beszállítjuk (megadott területen belül megbeszélés alapján) és a kész pálinkát pedig kiszállítjuk ügyfeleinknek.</p>
+                    </div>
+
+                    <div class="service">
+                        <i class="fa-solid fa-bottle-droplet"></i>
+                        <h2>Főzés</h2>
+                        <p>A kezdeti fázistól a végsőig folyamatos kontaktot tartunk kedves ügyfeleinkkel. Elérhetőek vagyunk a helyszínen és telefonon is a lejjebb írt napokon és időpontokban.</p>
+                    </div>
+
+                    <div class="service">
+                        <i class="fa-solid fa-hand-holding-dollar"></i>
+                        <h2>Fizetés</h2>
+                        <p>A kezdeti fázistól a végsőig folyamatos kontaktot tartunk kedves ügyfeleinkkel. Elérhetőek vagyunk a helyszínen és telefonon is a lejjebb írt napokon és időpontokban.</p>
+                    </div>
+                </div>
             </div>
         </section>
         <section id="contact">
-            <div>
 
-            </div>
         </section>
     </main>
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
