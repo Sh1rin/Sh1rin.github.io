@@ -50,7 +50,7 @@ section{
 #hero {
     display: flex;
     position: relative;
-    background: rgba(139, 84, 39, 0.527);
+    background: rgba(139, 84, 39, 0.750);
     box-shadow: 0 5px 15px  rgba(0,0,0,.6);
     display: flex;
     flex-direction: column;
@@ -63,7 +63,7 @@ section{
 }
 
 #hero p {
-    font-family: 'Cabin', sans-serif;
+    font-family: 'Barlow', sans-serif;
     margin: 0;
     padding: 0;
     font-size: 18px;
@@ -71,7 +71,7 @@ section{
 }
 
 #hero h1 {
-    font-family: 'Cabin', sans-serif;
+    font-family: 'Abril Fatface', cursive;
     text-shadow: 0 5px 5px #000;
     margin: 0 0 20px;
     padding: 0;
@@ -366,7 +366,7 @@ header{
 }
 .about_box_text p{
     text-align: justify;
-    font-family: 'Cabin', sans-serif;
+    font-family: 'Barlow', sans-serif;
     margin: 0;
     padding: 0;
     font-size: clamp(0.5rem, 1vw + 0.5rem ,1.1rem);
@@ -375,7 +375,7 @@ header{
 
 .about_box_text h2{
     text-align: center;
-    font-family: 'Cabin', sans-serif;
+    font-family: 'Forum', cursive;
     text-shadow: 0 5px 5px #000;
     margin: 0 0 20px;
     padding: 0;
@@ -404,7 +404,7 @@ header{
     flex: 1 1 60%;
     flex-wrap: wrap;
     text-align: justify;
-    font-family: 'Cabin', sans-serif;
+    font-family: 'Barlow', sans-serif;
     margin: 0;
     padding: 0;
     font-size: clamp(0.5rem, 1vw + 0.5rem ,1.1rem);
@@ -413,7 +413,7 @@ header{
 
 .about_p h2{
     text-align: center;
-    font-family: 'Cabin', sans-serif;
+    font-family: 'Forum', cursive;
     text-shadow: 0 5px 5px #000;
     margin: 10px 0 0 0;
     padding: 0;
@@ -452,6 +452,7 @@ header{
 .service h2{
     font-weight: 600;
     margin-bottom: 8px;
+    font-family: 'Forum', cursive;
 }
 
 .services_container h1{
@@ -461,6 +462,7 @@ header{
     margin-bottom: 60px;
     font-weight: 600;
     position: relative;
+    font-family: 'Forum', cursive;
 }
 
 .services_container h1::after{
@@ -506,6 +508,11 @@ header{
     color:rgb(255, 136, 0);
     transition: 0.5s;
 }
+
+.service p{
+    font-family: 'Barlow', sans-serif;
+}
+
 /*CONTACT RÉSZ*/
 
 .MainContainer{
@@ -526,6 +533,7 @@ header{
     font-size: 36px;
     text-align: center;
     margin-bottom: 10px;
+    font-family: 'Barlow', sans-serif;
 }
 .container .row100{
     position: relative;
@@ -628,6 +636,9 @@ input[type="number"]::-webkit-outer-spin-button {
     -webkit-appearance: none;
 }
 
+.container span{
+    font-family: 'Kalam', cursive;
+}
 /*FOOTER*/
 
 .contact_container{

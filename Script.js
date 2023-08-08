@@ -67,3 +67,6 @@ for (let i = 0; i < div.length; i++) {
       });
 }
 
+
+
+/*görgetéses probalkozasok*/
