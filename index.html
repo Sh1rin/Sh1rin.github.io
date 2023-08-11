@@ -25,7 +25,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,100&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
     <link rel="icon" href="\photos\logo2.0.ico" type="image/x-icon">
-
+    
 
 </head>
 <body>
@@ -144,107 +144,111 @@
             </div> -->
         </section>
         <section id="contact">
-            <div class="MainContainer">
-                <div class="container">
-                    <h2>Vedd fel velünk a kapcsolatot!</h2>
-                    <div class="row100">
-                        <div class="col">
-                            <div class="inputBox">
-                                <input type="text" name="" required="required">
-                                <span class="text">Teljes név</span>
-                                <span class="line"></span>
+            <form action="https://api.web3forms.com/submit" method="POST" >
+                <input type="hidden" name="access_key" value="6c2e1f81-4fcd-469f-ba75-ff0b6ffa1d2d">
+                    <div class="MainContainer">
+                        <div class="container">
+                            <h2>Vedd fel velünk a kapcsolatot!</h2>
+                            <div class="row100">
+                                <div class="col">
+                                    <div class="inputBox">
+                                        <input type="text" name="Nev" required="required">
+                                        <span class="text">Teljes név</span>
+                                        <span class="line"></span>
+                                    </div>
+                                </div>
+                                    <div class="col">
+                                        <div class="inputBox">
+                                            <input type="number" name="adoszam" required="required">
+                                            <span class="text">Adószám</span>
+                                            <span class="line"></span>
+                                        </div>
+                                    </div>
                             </div>
-                        </div>
-                            <div class="col">
-                                <div class="inputBox">
-                                    <input type="number" name="" required="required">
-                                    <span class="text">Adószám</span>
-                                    <span class="line"></span>
+                            <div class="row100">
+                                <div class="col">
+                                    <div class="inputBox">
+                                        <input type="text" name="Cim" required="required">
+                                        <span class="text">Irányítoszám</span>
+                                        <span class="line"></span>
+                                    </div>
+                                </div>
+                                    <div class="col">
+                                        <div class="inputBox">
+                                            <input type="text" name="Cim" required="required">
+                                            <span class="text">Város</span>
+                                            <span class="line"></span>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="row100">
+                                <div class="col">
+                                    <div class="inputBox">
+                                        <input type="text" name="Cim" required="required">
+                                        <span class="text">Cím (utca, házszám, emelet, ajtó)</span>
+                                        <span class="line"></span>
+                                    </div>
                                 </div>
                             </div>
-                    </div>
-                    <div class="row100">
-                        <div class="col">
-                            <div class="inputBox">
-                                <input type="text" name="" required="required">
-                                <span class="text">Irányítoszám</span>
-                                <span class="line"></span>
-                            </div>
-                        </div>
-                            <div class="col">
-                                <div class="inputBox">
-                                    <input type="text" name="" required="required">
-                                    <span class="text">Város</span>
-                                    <span class="line"></span>
+                            <div class="row100">
+                                <div class="col">
+                                    <div class="inputBox">
+                                        <input type="text" name="email" required="required">
+                                        <span class="text">E-mail</span>
+                                        <span class="line"></span>
+                                    </div>
                                 </div>
+                                    <div class="col">
+                                        <div class="inputBox">
+                                            <input type="number" name="Phone Number" required="required">
+                                            <span class="text">Telefonszám</span>
+                                            <span class="line"></span>
+                                        </div>
+                                    </div>
                             </div>
-                    </div>
-                    <div class="row100">
-                        <div class="col">
-                            <div class="inputBox">
-                                <input type="text" name="" required="required">
-                                <span class="text">Cím (utca, házszám, emelet, ajtó)</span>
-                                <span class="line"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row100">
-                        <div class="col">
-                            <div class="inputBox">
-                                <input type="text" name="" required="required">
-                                <span class="text">E-mail</span>
-                                <span class="line"></span>
-                            </div>
-                        </div>
-                            <div class="col">
-                                <div class="inputBox">
-                                    <input type="number" name="" required="required">
-                                    <span class="text">Telefonszám</span>
-                                    <span class="line"></span>
+                                <div class="row100">
+                                    <div class="col">
+                                        <div class="inputBox textarea">
+                                            <textarea name="message" required="required"></textarea>
+                                            <span class="text">Ide írd az üzeneted...</span>
+                                            <span class="line"></span>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                    </div>
-                        <div class="row100">
-                            <div class="col">
-                                <div class="inputBox textarea">
-                                    <textarea required="required"></textarea>
-                                    <span class="text">Ide írd az üzeneted...</span>
-                                    <span class="line"></span>
+                                <div class="row100">
+                                    <div class="col">
+                                        <input type="submit" value="Küldés">
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="row100">
-                            <div class="col">
-                                <input type="submit" value="Küldés">
-                            </div>
-                        </div>
                     </div>
-                </div>
-            </div>
-            <footer class="contact_container">
-                <div class="contact_row">
+                    <div class="h-captcha" data-captcha="true"></div>
+            </form>
+                <footer class="contact_container">
+                    <div class="contact_row">
 
-                    <div class="contact_opening">
-                        <p>
-                            NYITVATARTÁS: <br> <br>
-                            H-P: 05:00-21:00 <br>
-                            Sz-V: ZÁRVA <br>
-                        </p>
+                        <div class="contact_opening">
+                            <p>
+                                NYITVATARTÁS: <br> <br>
+                                H-P: 05:00-21:00 <br>
+                                Sz-V: ZÁRVA <br>
+                            </p>
+                        </div>
+                        <div class="contact_adress">
+                            <p>
+                                CÍM: <br> <br>
+                            3252 Erdőkövesd, Hunyadi János út 134. HRSZ: 163/A. <br> <br>
+                            </p>
+                        </div>
+                        <div class="contact_phone">
+                            <p>
+                                ELÉRHETŐSÉG: <br> <br>
+                                tajtikisustikft@gmail.com <br>
+                                +36-20-470-1718 
+                            </p>
+                        </div>
                     </div>
-                    <div class="contact_adress">
-                        <p>
-                            CÍM: <br> <br>
-                           3252 Erdőkövesd, Hunyadi János út 134. HRSZ: 163/A. <br> <br>
-                        </p>
-                    </div>
-                    <div class="contact_phone">
-                        <p>
-                            ELÉRHETŐSÉG: <br> <br>
-                            tajtikisustikft@gmail.com <br>
-                            +36-20-470-1718 
-                        </p>
-                    </div>
-                </div>
             </footer>
         </section>
     </main>
