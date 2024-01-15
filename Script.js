@@ -37,6 +37,8 @@ window.onscroll = () => {
     })
 }
 
+
+
 // TO DO LIST
 // const arrowContainer = document.querySelectorAll('.arrow-container');
 
@@ -70,3 +72,4 @@ for (let i = 0; i < div.length; i++) {
 
 
 /*görgetéses probalkozasok*/
+
